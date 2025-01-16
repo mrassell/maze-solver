@@ -76,9 +76,9 @@ def find_path(maze, stdscr):
 def find_neighbors(maze, row, col):
     neighbors = []
 
-    if row > 0:  # UP
+    if row > 0:  
         neighbors.append((row - 1, col))
-    if row + 1 < len(maze):  # DOWN
+    if row + 1 < len(maze):  
         neighbors.append((row + 1, col))
     if col > 0:  # LEFT
         neighbors.append((row, col - 1))
